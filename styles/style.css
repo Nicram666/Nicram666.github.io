@@ -625,7 +625,7 @@ footer {
 @media (650px <= width <= 968px) {
 
  .circle {
- 
+
   width: 400px;
   height: 400px;
   
@@ -636,6 +636,10 @@ footer {
   font-size: 20px;
   letter-spacing: -1px;
 
+}
+
+.question {
+  width: 50%;
 }
 
 
