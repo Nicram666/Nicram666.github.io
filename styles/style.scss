@@ -1,0 +1,284 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  height: 200vh;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0px;
+  height: 120px;
+  box-shadow: 0px 1px 10px 1px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+
+  .logo {
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  .shake {
+    display: none;
+  }
+
+  .shaker {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    display: none;
+    width: 80px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    .nav-item {
+      padding: 15px 20px 15px 20px;
+      list-style: none;
+
+      .link-item {
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .link-item:hover {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+
+
+
+.video {
+  width: 100%;
+  height: 80vh;
+  margin-top: 120px;
+  text-align: center;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 1px 10px 1px black;
+  }
+  .mainheader {
+    position: absolute;
+    z-index: 100;
+    font-size: 50px;
+    color: white;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.logo_about_us {
+  width: 30%;
+}
+
+.lead {
+margin-top: 20px;
+}
+
+.socialmedia {
+  height: 20vh;
+  background-color: white;
+  margin-top: 20px;
+}
+
+h2 {
+  width: 100%;
+  line-height: 10vh;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socialmedia {
+  height: 30vh;
+  .socialicons {
+    display: flex;
+    justify-content: center;
+    i {
+      padding: 20px;
+      font-size: 50px;
+      margin: 0px 30px 0px 30px;
+      text-decoration: none;
+      color: black;
+    }
+
+    i:hover {
+      filter: drop-shadow(0px 0px 10px rgb(214, 204, 54));
+      transform: scale(1.1);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes materialize {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.carousel-item {
+  height: 70vh;
+}
+
+.carousel-item img {
+width: 100%;
+height: auto;
+min-height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(70, 63, 63, 0.822);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.carousel-control-next-icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 50px;
+}
+
+.carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 50px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  height: 7px;
+  width: 40px;
+  margin: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 60px 60px 0px 60px;
+  width: 100%;
+
+}
+
+.abouthead {
+padding: 20px;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactSection {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conCard {
+  text-align: center;
+}
+
+.conCard i {
+  padding: 30px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar .burger {
+    display: block;
+    animation: wiggle;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+  }
+
+  header .navbar .nav-menu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.164);
+    position: fixed;
+    flex-direction: column;
+    width: 150px;
+    top: 75px;
+    right: 0%;
+    border: solid black 1px;
+    background-color: white;
+    padding-left: 0px;
+    transition: 1s;
+  }
+
+  header .navbar .active {
+    display: flex;
+  }
+
+  header .navbar .shake {
+    display: block;
+  }
+
+  header .navbar .nav-menu .nav-item {
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(131, 131, 131, 0.075);
+  }
+
+
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(-45deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    45% {
+      transform: rotate(-45deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .card-deck {
+    display: block;
+  }
+}
+

@@ -1,0 +1,809 @@
+
+@font-face {
+    font-family: 'trade_gothic_lt_bold_condensed_no._20-demo';
+    src: url('../img/Fonts/trade_gothic_lt_bold_condensed_no._20-webfont.woff2') format('woff2'),
+         url('../img/Fonts/trade_gothic_lt_bold_condensed_no._20-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'trade_gothic_lt_bold_condensed_no._20-demo', Arial, sans-serif;
+  height: 100vh;
+  background-color: black;
+ 
+}
+
+ @keyframes welcome {
+    0% {
+      padding: 0px;
+      width: 0px;
+      height: 0px;
+      transform: rotate(-360deg);
+      font-weight: 0000;
+      font-size:  0px;
+      letter-spacing: -1px;
+    }
+  
+    100% {
+     
+    }
+  }
+
+
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 120px;
+  box-shadow: 0px 1px 100px 1px #d8ac28;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index: 9999;
+}
+.navbar .logo {
+  height: 100%; 
+  margin-left: 20px;
+  margin-right: 10px;
+  /* max-width: 40%; */
+}
+.navbar .shake {
+  display: none;
+  
+}
+.navbar .shaker {
+  
+  color: #d8ac28;
+  display: flex;
+  align-items: center;
+}
+
+input[type='radio'] {
+    accent-color: #000000;
+    /* width: 20px; */
+}
+
+.navbar .burger {
+  display: none;
+  width: 60px;
+  cursor: pointer;
+  color: #d8ac28;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #d8ac28;
+  background-color: black;
+  }
+
+
+.navbar .nav-menu .nav-item {
+  padding: 15px 20px 15px 20px;
+  list-style: none;
+}
+.navbar .nav-menu .nav-item .link-item {
+  text-decoration: none;
+  color:white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.navbar .nav-menu .nav-item .selected{
+  color: #d8ac28;
+  
+}
+.navbar .nav-menu .nav-item .link-item:hover {
+  font-weight: 200;
+  color: #d8ac28;
+}
+ 
+
+img.burger {
+  color: #d8ac28;
+}
+
+.circle__container {
+  /* position: relative; */
+  /* margin-top: 180px; */
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-image: url('../img/bokeh.png'); */
+  background-size: cover;
+}
+
+.circle {
+  /* margin-top: 80px; */
+  /* position: relative; */
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #b99056;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  animation: welcome;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  font-weight: 1000;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+
+
+.tropical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-color: #efa41f;
+  border-radius: 200px 0 0 0;
+}
+
+.tropical a {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+}
+
+.tropical a:hover {
+  cursor: pointer;
+  
+}
+
+
+.creamy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-color: #ffffff ;
+  border-radius: 0 200px 0 0;
+}
+
+.creamy a {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  left: 50%;
+}
+
+.creamy a:hover {
+  cursor: pointer;
+  
+}
+
+.smoky {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border-radius: 0 0 0 200px;
+}
+
+.smoky a {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 0%;
+}
+
+.smoky a:hover {
+  cursor: pointer;
+  
+}
+
+.fresh {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-color: #8eb53c;
+  border-radius: 0 0 200px 0;
+}
+
+.fresh a {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+}
+
+.fresh a:hover {
+  cursor: pointer;
+  
+}
+
+.johnny {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30%;
+  height: 30%;
+  background-color: #b99056;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.johnny img {
+
+  width: 80%;
+  height: 80%;
+  color: black;
+  padding: 10px;
+}
+
+
+
+
+.video {
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 120px; */
+  text-align: center;
+  background-color: black;
+  
+}
+
+.receptury {
+  margin-top: 180px;
+  height: 100%;
+  color: white;
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 70%;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+
+  
+
+
+.triangle {
+  position: absolute;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    width: 460px;
+    height: 400px;
+    right: 0px;
+    bottom: 0px;
+  background: linear-gradient(#ac2727, #d8ac28);
+}
+
+.recepturowy {
+  width: 30%;
+ 
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 60px;
+  color: white;
+  font-weight: 5000;
+  background-color: black;
+}
+
+.cocktail {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 100;
+  width: 400px;
+  /* height: 400px; */
+}
+
+.mainp {
+  margin-top: 150px;
+  color: white;
+  padding: 30px;
+}
+
+
+#about {
+  margin-bottom: 50px;
+}
+
+.underheader {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.logo_about_us {
+  width: 30%;
+}
+
+.lead {
+  margin-top: 20px;
+}
+
+.socialmedia {
+  height: 20vh;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.gold {
+  color: #d8ac28;
+}
+
+h2 {
+  width: 100%;
+  line-height: 10vh;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socialmedia {
+  height: 30vh;
+}
+.socialmedia .socialicons {
+  display: flex;
+  justify-content: center;
+}
+.socialmedia .socialicons i {
+  padding: 20px;
+  font-size: 50px;
+  margin: 0px 30px 0px 30px;
+  text-decoration: none;
+  color: black;
+}
+.socialmedia .socialicons i:hover {
+  filter: drop-shadow(0px 0px 10px #d6cc36);
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer {
+  text-decoration-line: overline;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+@keyframes materialize {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.carousel-item {
+  height: 70vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  color: #d8ac28;
+}
+
+.carousel-caption {
+  background-color: rgba(70, 63, 63, 0.822);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.carousel-control-next-icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 50px;
+}
+
+.carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 7px;
+  width: 40px;
+  margin: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 60px 60px 0px 60px;
+  width: 100%;
+}
+
+.abouthead {
+  padding: 20px;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactSection {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conCard {
+  text-align: center;
+}
+
+.conCard i {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.drinkName {
+  margin-top: 50px;
+}
+
+.drinkNameBot {
+  margin-top: 0;
+}
+
+.question {
+  border-radius: 5px;
+}
+
+
+
+@media (0px <= width <= 650px) {
+  .navbar .burger {
+    display: block;
+    animation: wiggle;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    width: 50px;
+  }
+
+.question {
+  width: 80%;
+}
+
+.cocktail {
+  width: 200px;
+  /* height: 400px; */
+}
+
+
+
+.header {
+  top: 30%;
+  width: 80%;
+  font-size: 50px;
+  text-align: center;
+  left: 12%;
+  text-align: left;
+}
+
+
+
+
+.triangle {
+   width: 400px;
+    height: 400px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+  .navbar .logo {
+  /* height: 100%; */
+  margin-left: 20px;
+  max-width: 50%;}
+
+  
+
+  header .navbar .nav-menu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.164);
+    position: fixed;
+    flex-direction: column;
+    width: 160px;
+    top: 120px;
+    right: 0%;
+    border: solid #d8ac28 1px;
+    background-color:black;
+    padding-left: 0px;
+    transition: 1s;
+  
+  }
+
+
+  header .navbar .active {
+    display: flex;
+  }
+
+  header .navbar .shake {
+    display: block;
+  }
+
+  header .navbar .nav-menu .nav-item {
+    padding: 5px 0px 5px 0px;
+    margin-left: 15px;
+    width: 100%; 
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .link-item {
+    font-size: 10px;
+  }
+
+  header .navbar .shake {
+    display: none;
+  }
+
+  .circle {
+ font-size: 22px;
+  width: 290px;
+  height: 290px;
+  
+}
+
+/* .drinkName {
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: -1px;
+} */
+
+
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(-45deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    45% {
+      transform: rotate(-45deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .card-deck {
+    display: block;
+  }
+}
+
+@media (650px <= width <= 968px) {
+
+ .circle {
+ 
+  width: 400px;
+  height: 400px;
+  
+}
+
+.drinkName {
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: -1px;
+
+}
+
+
+}
+
+.headerinquiz {
+  margin-bottom: 50px;
+  color: white;
+}
+
+.quiz {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  /* min-width: 40%; */
+  margin: 10px;
+  background-color: #d8ac28;
+  transform: skewX(20deg);
+  min-width: 40%;
+  
+}
+
+.question-content {
+  transform: skewX(-20deg)
+}
+
+.question-answers {
+  max-width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  transform: skewX(-20deg)
+}
+
+
+
+.checked {
+background-color: #d8ac28;
+border-radius: 31px;
+padding: 10px 20px 10px 10px;
+}
+
+.question-answers span {
+  /* width: 30%; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 10px 10px;
+  font-weight: 100;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+/* .question-answers span :hover {
+
+} */
+
+.tlo {
+  background-image: url('../img/bokeh.jpg');
+  background-size: 100%;
+  
+}
+
+.checkdrink {
+margin-bottom: 50px;
+margin-top: 20px;
+padding: 10px;
+font-size: 20px;
+background-color: white;
+color: black;
+}
+
+.checkdrink:hover {
+ color: #d8ac28;
+}
+
+.result {
+  text-align: center;
+  position: fixed;
+  min-width: 40%;
+  height: 30%;
+  background-color: black;
+ border: solid #d8ac28 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10001;
+  justify-content:center
+}
+
+.resultbad {
+  /* text-align: center; */
+  position: fixed;
+  width: 65%;
+  height: 30%;
+  background-color: black;
+ border: solid #d8ac28 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 10001;
+}
+
+.smakbad {
+  color: #d8ac28;
+  font-size: 25px;
+}
+
+.fog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+.smak {
+  color: #d8ac28;
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.result a {
+  /* margin-bottom: 50px; */
+margin-top: 20px;
+padding: 10px;
+font-size: 20px;
+background-color: black;
+color: white;
+font-family: "Roboto Slab", serif;
+text-decoration: none;
+border: #d8ac28 solid 2px;
+}
+
+.result a:hover {
+background-color: #d8ac28;
+color: black;
+}
+
+/* karuzela */
+
+.title {
+  text-align: left;
+  margin: 50px 0px 50px 0px;
+  line-height: 30px;
+}
+
+.sposob {
+  margin-bottom: 0px;
+}
