@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'trade_gothic_lt_bold_condensed_no._20-demo';
-    src: url('../img/Fonts/trade_gothic_lt_bold_condensed_no._20-webfont.woff2') format('woff2'),
-         url('../img/Fonts/trade_gothic_lt_bold_condensed_no._20-webfont.woff') format('woff');
+    src: url('../img/webfontkit-20230614-025947/trade_gothic_lt_bold_condensed_no._20-webfont.woff2') format('woff2'),
+         url('../img/webfontkit-20230614-025947/trade_gothic_lt_bold_condensed_no._20-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -14,6 +14,8 @@ body {
   padding: 0px;
   box-sizing: border-box;
   font-family: 'trade_gothic_lt_bold_condensed_no._20-demo', Arial, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  
   /* height: 100vh; */
   
   background-color: black;
@@ -53,9 +55,10 @@ body {
 }
 .navbar .logo {
   height: 100%; 
-  margin-left: 20px;
-  margin-right: 10px;
-  /* max-width: 40%; */
+  /* margin-left: 20px;
+  margin-right: 10px; */
+  margin: auto;
+
 }
 .navbar .shake {
   display: none;
@@ -66,6 +69,12 @@ body {
   color: #d8ac28;
   display: flex;
   align-items: center;
+}
+
+.title {
+  text-align: left;
+  margin: 180px 0px 30px 0px;
+  line-height: 30px;
 }
 
 input[type='radio'] {
@@ -267,6 +276,32 @@ img.burger {
   padding: 10px;
 }
 
+.question-answers span {
+  /* width: 30%; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 10px 10px;
+  font-weight: 100;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+
+.question-answers {
+  max-width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  transform: skewX(-20deg)
+  
+}
+
+
+
 
 
 
@@ -280,16 +315,20 @@ img.burger {
 }
 
 .receptury {
-  margin-top: 180px;
-  height: 100%;
+  /* padding-top: 180px; */
+  height: 80vh;
   color: white;
   margin-left: 40px;
   margin-right: 20px;
   width: 70%;
+  position: relative;
+
 }
 
 h1 {
   margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 
@@ -317,14 +356,14 @@ h1 {
   left: 5%;
   font-size: 60px;
   color: white;
-  font-weight: 5000;
+  /* font-weight: 5000; */
   background-color: black;
 }
 
 .cocktail {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: -2px;
+  right: -2px;
   z-index: 100;
   width: 400px;
   /* height: 400px; */
@@ -379,13 +418,13 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.socialmedia .socialicons i {
+/* .socialmedia .socialicons i {
   padding: 20px;
   font-size: 50px;
   margin: 0px 30px 0px 30px;
   text-decoration: none;
   color: black;
-}
+} */
 .socialmedia .socialicons i:hover {
   filter: drop-shadow(0px 0px 10px #d6cc36);
   transform: scale(1.1);
@@ -461,6 +500,13 @@ footer {
   justify-content: space-around;
 }
 
+.tlo {
+  background-image: url('../img/bokeh.jpg');
+  background-size: 100%;
+  height: 130vh;
+
+}
+
 .contactSection {
   height: 20vh;
   width: 100%;
@@ -486,9 +532,25 @@ footer {
   margin-top: 0;
 }
 
+.question-content {
+  transform: skewX(-20deg);
+}
+
+
+
+
 .question {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px;
+  background-color: #d8ac28;
+  transform: skewX(20deg);
+  /* width: 80%; */
   border-radius: 5px;
 }
+
 
 
 
@@ -503,7 +565,7 @@ footer {
   }
 
 .question {
-  width: 80%;
+  min-width: 80%;
 }
 
 .cocktail {
@@ -635,16 +697,52 @@ footer {
 
 
 .drinkName {
-  font-weight: 1000;
+  /* font-weight: 1000; */
   font-size: 20px;
   letter-spacing: -1px;
 
 }
 
 .question {
-  width: 50%;
+  min-width: 70%;
 }
 
+.question-content {
+  font-size: 50px;
+}
+
+.question-answers span {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 55px;
+}
+.receptury {
+  font-size: 30px;
+  
+}
+
+.bullets {
+  font-size: 18px;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.tlo {
+  height: 130vh;
+}
+
+.cocktail {
+  width: 500px;
+}
 
 }
 
@@ -663,31 +761,7 @@ footer {
   align-items: center;
 }
 
-.question {
-  border: solid black 2px;
-  display: flex;
-  flex-direction: column;
-  /* min-width: 40%; */
-  margin: 10px;
-  background-color: #d8ac28;
-  transform: skewX(20deg);
-  min-width: 40%;
-  
-}
 
-.question-content {
-  transform: skewX(-20deg)
-}
-
-.question-answers {
-  max-width: 100%;
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  height: 12vh;
-  transform: skewX(-20deg)
-}
 
 
 
@@ -697,32 +771,33 @@ border-radius: 31px;
 padding: 10px 20px 10px 10px;
 }
 
-.question-answers span {
-  /* width: 30%; */
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 20px 10px 10px;
-  font-weight: 100;
-  font-size: 20px;
-  justify-content: space-between;
-}
 
 /* .question-answers span :hover {
 
 } */
 
-.tlo {
-  background-image: url('../img/bokeh.jpg');
-  background-size: 100%;
-  height: 110vh;
 
+
+.bullets {
+  list-style: none; /* Remove default bullets */
+  /* margin-right: 60px; */
+}
+
+.bullets li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #d8ac28;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .backgrnd {
    background-image: url('../img/bokeh.jpg');
   background-size: 100%;
+  /* height: 100%; */
+  /* height: 100%; */
+  /* position: relative; */
 }
 
 .checkdrink {
@@ -785,6 +860,7 @@ color: black;
 .smak {
   color: #d8ac28;
   font-size: 25px;
+
 }
 
 .hidden {
@@ -797,6 +873,7 @@ color: black;
 margin-top: 20px;
 padding: 10px;
 font-size: 20px;
+width: 80%;
 background-color: black;
 color: white;
 font-family: "Roboto Slab", serif;
@@ -811,11 +888,7 @@ color: black;
 
 /* karuzela */
 
-.title {
-  text-align: left;
-  margin: 50px 0px 50px 0px;
-  line-height: 30px;
-}
+
 
 .sposob {
   margin-bottom: 0px;
