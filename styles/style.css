@@ -416,7 +416,7 @@ h1 {
 
 h2 {
   width: 100%;
-  line-height: 10vh;
+  line-height: 60px;
   text-align: center;
   padding: 0px;
   margin: 0px;
@@ -566,6 +566,7 @@ footer {
   transform: skewX(20deg);
   /* width: 80%; */
   border-radius: 5px;
+  
 }
 
 
@@ -582,7 +583,8 @@ footer {
   }
 
 .question {
-  min-width: 70%;
+  min-width: 72%;
+  height: 200px;
 }
 
 .cocktail {
@@ -789,6 +791,7 @@ footer {
 
 .question-content {
   font-size: 50px;
+  line-height: 50px;
 }
 
 .question-answers span {
@@ -922,6 +925,7 @@ color: black;
 }
 
 .smakbad {
+padding: 9px;
   color: #d8ac28;
   font-size: 25px;
 }
@@ -937,7 +941,7 @@ color: black;
 .smak {
   color: #d8ac28;
   font-size: 25px;
-
+padding: 10px;
 }
 
 .hidden {
