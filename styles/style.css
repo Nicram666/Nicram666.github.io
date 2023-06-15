@@ -588,7 +588,7 @@ footer {
 }
 
 .cocktail {
-  width: 250px;
+  width: 200px;
   /* height: 400px; */
 }
 
@@ -878,6 +878,7 @@ padding: 10px 20px 10px 10px;
   /* height: 80vh; */
   /* height: 100%; */
   /* position: relative; */
+  position: relative;
 }
 
 .checkdrink {
