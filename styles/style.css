@@ -545,6 +545,12 @@ footer {
 
 .question-content {
   transform: skewX(-20deg);
+  font-size: 18px;
+}
+
+.question-answers span {
+  /* background-color: #ac2727; */
+  font-size: 12px;
 }
 
 
